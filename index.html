@@ -9,7 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="login.css" />
+    <style>
+.signup{grid-template-columns:.8fr 1.2fr;gap:70px}.account-forms{display:grid;grid-template-columns:1fr 1fr;gap:16px}.signup-form,.login-form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:27px;box-shadow:0 11px 26px rgba(30,52,83,.08)}.login-form{background:#edf8fa}.login-form .eyebrow{font-size:11px;margin-bottom:11px}.login-form>p:not(.eyebrow){margin:0;color:var(--muted);font-size:16px}.login-form h3{font:800 25px Nunito,sans-serif;margin:0 0 8px}input[type=password]{width:100%;padding:13px;margin-top:5px;border:1px solid #b6c4d0;border-radius:7px;font:17px "Atkinson Hyperlegible",sans-serif}.signup-form button,.login-form button{width:100%;justify-content:center}.button-secondary{background:var(--ink);color:white;margin-top:20px}.forgot{display:block;color:var(--ink);font-size:14px;text-align:center;margin-top:18px}@media(max-width:900px){.signup{grid-template-columns:1fr;gap:35px}.account-forms{max-width:700px}}@media(max-width:760px){.account-forms{grid-template-columns:1fr}}
+.brand img{display:block;width:130px;height:74px;object-fit:contain;object-position:center}.site-header .brand{display:flex;align-items:center;height:62px}.site-header .brand img{width:142px;height:82px}footer .brand img{width:118px;height:68px}@media(max-width:760px){.site-header .brand img{width:112px;height:66px}footer .brand img{width:105px;height:60px}}
+.resend-link{display:block;border:0;background:transparent;color:var(--ink);font:700 14px "Atkinson Hyperlegible",sans-serif;text-decoration:underline;cursor:pointer;margin:14px auto 0}
+
+/* Paleta inspirada en el logo de LÃºmina */
+:root{--ink:#06366f;--muted:#28658f;--cream:#f5fbff;--coral:#079fe3;--yellow:#ffc329;--blue:#c9efff;--line:#abd9ed}.nav-cta,.button-secondary{background:#06366f}.button-primary{background:#079fe3;box-shadow:0 5px 0 #067eb6}.hero h1 em{color:#078fd1}.eyebrow{color:#d79600}.hero-art{background:#d8f4ff}.sun{background:#ffc329}.paper-back{background:#fff4c9}.letter{color:#079fe3}.pencil{background:#ffc329}.spark{color:#e9a900}.coral{background:#d9f4ff}.yellow{background:#fff0b6}.blue{background:#dceeff}.audiences{background:#052d60}.audiences .eyebrow{color:#ffd45f}.audience-number{color:#ffcf38}.signup-form{border-color:#abd9ed}.login-form{background:#e7f7ff}.library{background:#eaf8ff}.library-icon.coral{background:#d9f4ff}.library-icon.yellow{background:#fff0b6}.library-icon.blue{background:#dceeff}.library-icon.lavender{background:#e0efff}.library-icon.green{background:#d5f0f4}.download span,.request-card span{color:#e4a400}.form-message,.download-message{color:#08745d}
+.library{background:#f1f8f9;padding:86px 0}.library .section-wrap{padding:0 30px}.library-heading{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;margin-bottom:38px}.library-heading h2{font-size:44px}.library-heading>div>p:last-child{color:var(--muted);margin:0}.logout{background:transparent;color:var(--ink);border:1px solid #9eafbc;border-radius:8px;padding:10px 14px;font:700 15px Nunito,sans-serif;cursor:pointer}.library-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.library-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;min-height:285px;display:flex;flex-direction:column}.file-tag{color:#6c7f92;font:800 11px Nunito,sans-serif;letter-spacing:1px}.library-icon{width:55px;height:55px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin:17px 0 12px;font:800 25px Nunito,sans-serif}.library-icon.coral{background:#ffd9d1}.library-icon.yellow{background:#ffefb9}.library-icon.blue{background:#d9f4f8}.library-icon.lavender{background:#e9dfff}.library-icon.green{background:#d9f0d7}.library-icon.outline{border:2px dashed #8da0b0;background:transparent}.library-card h3{font:800 21px Nunito,sans-serif;margin:0 0 5px}.library-card p{color:var(--muted);font-size:16px;margin:0}.download,.request-card a{border:0;background:none;color:var(--ink);text-decoration:none;font:800 15px Nunito,sans-serif;padding:18px 0 0;text-align:left;margin-top:auto;cursor:pointer}.download span,.request-card span{color:#df6353;font-size:19px;margin-left:8px}.request-card{background:#fffaf0;border-style:dashed}.diploma-card{background:#fff9e8;border-style:dashed}.diploma-card .library-icon{background:#fff0b6}.diploma-card .download:disabled{color:#7e8c9a;cursor:not-allowed}.diploma-section{background:linear-gradient(135deg,#fff9dc,#eaf8ff);border-color:#ffc329}.diploma-message{margin-top:22px;padding:18px;border-radius:12px;background:#fff;color:var(--ink);font-size:18px}.word-games{margin-top:44px;padding:30px;border:1px solid #abd9ed;border-radius:18px;background:#fff}.word-games-heading h3{font:800 30px Nunito,sans-serif;margin:0 0 5px}.word-games-heading p{margin:0;color:var(--muted)}.word-games-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}.word-game-download{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;align-items:center;padding:18px;border-radius:12px;background:#eaf8ff;color:var(--ink);text-decoration:none}.word-game-download span{grid-row:span 2;background:#ffc329;border-radius:6px;padding:4px 6px;font:800 11px Nunito,sans-serif}.word-game-download strong{font:800 17px Nunito,sans-serif}.word-game-download em{font:700 14px Nunito,sans-serif;color:#08745d;font-style:normal}.download-message{min-height:25px;color:#297154;font-weight:bold;margin:22px 0 0}@media(max-width:900px){.library-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.library{padding:65px 0}.library .section-wrap{padding:0 20px}.library-heading{display:block}.logout{margin-top:20px}.library-grid,.word-games-grid{grid-template-columns:1fr}.library-heading h2{font-size:38px}.word-games{padding:22px}.word-games-heading h3{font-size:27px}}
+
+</style>
     <style>.site-header,.section-wrap,.hero,footer{max-width:none!important;width:100%;margin-left:0;margin-right:0}.footer-logos{display:flex;align-items:center;justify-content:center;gap:24px}.footer-logos a{display:flex;align-items:center;justify-content:center;width:155px}.footer-logos img{display:block;max-width:100%;height:72px;object-fit:contain}.footer-logos .partner-logo{width:78px;height:78px;border-radius:12px}</style>
     <style>.mission-vision{padding:86px 30px;background:#f5fbff}.mission-vision h2{max-width:720px;font-size:43px}.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:35px}.mission-grid article{padding:32px;border:1px solid #abd9ed;border-radius:18px;background:#fff}.mission-grid article:last-child{background:#eaf8ff}.mission-icon{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:14px;background:#ffc329;color:#06366f;font-size:26px}.mission-grid h3{margin:18px 0 10px;font:800 27px Nunito,sans-serif;color:#06366f}.mission-grid p{margin:0;color:#28658f;font-size:17px}@media(max-width:760px){.mission-vision{padding:65px 20px}.mission-vision h2{font-size:38px}.mission-grid{grid-template-columns:1fr}.mission-grid article{padding:25px}}</style>
     <style>.about-lumina{max-width:900px;margin-top:28px;padding:28px 32px;border-left:6px solid #ffc329;border-radius:0 16px 16px 0;background:#fff}.about-lumina h3{margin:0 0 10px;font:800 27px Nunito,sans-serif;color:#06366f}.about-lumina p{margin:0;color:#28658f;font-size:18px}@media(max-width:760px){.about-lumina{padding:24px}}</style>
@@ -129,7 +138,128 @@
     <footer><div class="footer-logos"><a href="#inicio" aria-label="UNACH en movimiento"><img src="unach.png" alt="UNACH en movimiento" /></a><img class="partner-logo" src="logo-acompanante.png" alt="Logo institucional" /></div><p>EducaciÃ³n inclusiva, un lugar para aprender y seguro para todos.</p><div class="footer-credit"><p>Autores: Marco RÃ­os - Robinson Paillacho</p><p>Coautor: Mgs. Elvis Ruiz</p></div><div class="social-follow"><strong>Â¡SÃ­guenos!</strong><div><img src="instagram-logo.png" alt="Instagram" /><a href="https://www.instagram.com/lumina_dyx/" target="_blank" rel="noopener" style="font-size:16px;color:#06366f;text-decoration:none">lÃºmina_dyx</a></div></div></footer>
     <style>footer{display:grid!important;grid-template-columns:auto minmax(220px,1fr) auto auto;gap:24px;align-items:center;justify-content:stretch}footer>p{margin:0!important;text-align:center}footer .footer-credit{display:flex;flex-direction:column;gap:5px;white-space:nowrap}footer .footer-credit p{margin:0!important;width:auto!important;text-align:left}.social-follow{display:flex;flex-direction:column;gap:7px;align-items:center;color:#06366f;font:800 17px Nunito,sans-serif}.social-follow>div{display:flex;align-items:center;gap:9px}.social-follow img{width:30px;height:30px;object-fit:contain}.social-follow span{font-size:16px}@media(max-width:900px){footer{grid-template-columns:1fr!important;justify-items:center;gap:16px}footer>p,footer .footer-credit p{text-align:center!important}.footer-logos{margin:auto}}</style>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="script.js"></script>
+    <script>
+const supabaseClient = window.supabase.createClient(
+  'https://lnblooccrqjmkkibqspj.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxuYmxvb2NjcnFqbWtraWJxc3BqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQyMTgwMjIsImV4cCI6MjA5OTc5NDAyMn0.sf6aBWWzXZ6GvOwwZ6yJg857gxU-OfHlwr4776RF918'
+);
+
+const signupForm = document.querySelector('#signup-form');
+const signupMessage = document.querySelector('#form-message');
+const loginForm = document.querySelector('#login-form');
+const loginMessage = document.querySelector('#login-message');
+const library = document.querySelector('#biblioteca');
+const logout = document.querySelector('#logout');
+const downloadMessage = document.querySelector('#download-message');
+const diplomaToggle = document.querySelector('#diploma-toggle');
+const diplomaTag = document.querySelector('#diploma-tag');
+const diplomaDescription = document.querySelector('#diploma-description');
+const requiredSections = ['guia-lectura', 'juegos-de-palabras', 'planificador-semanal', 'acompanar-con-calma', 'clase-inclusiva'];
+// El progreso solo cuenta durante la visita actual: el Diploma siempre inicia bloqueado al abrir el enlace.
+const completedSections = new Set();
+
+function updateDiploma() {
+  const progress = requiredSections.filter((section) => completedSections.has(section)).length;
+  const unlocked = progress === requiredSections.length;
+
+  diplomaToggle.disabled = !unlocked;
+  diplomaToggle.textContent = unlocked ? 'Ver mi diploma â†“' : `Completa ${progress} de ${requiredSections.length} secciones`;
+  diplomaToggle.setAttribute('aria-expanded', 'false');
+  diplomaTag.textContent = unlocked ? 'DIPLOMA Â· DESBLOQUEADO' : 'DIPLOMA Â· BLOQUEADO';
+  diplomaDescription.textContent = unlocked
+    ? 'Â¡Lo lograste! Tu diploma ya estÃ¡ disponible.'
+    : 'Explora las 5 secciones de recursos para desbloquear tu diploma.';
+}
+
+function showLibrary() {
+  library.hidden = false;
+  library.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Al volver de una descarga o recargar la pÃ¡gina, conserva la sesiÃ³n iniciada.
+supabaseClient.auth.getSession().then(({ data: { session } }) => {
+  if (session) showLibrary();
+});
+
+signupForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const name = document.querySelector('#name').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const password = document.querySelector('#signup-password').value;
+  signupMessage.textContent = 'Creando tu cuentaâ€¦';
+
+  const { error } = await supabaseClient.auth.signUp({
+    email,
+    password,
+    options: { data: { full_name: name } }
+  });
+
+  if (error) {
+    signupMessage.textContent = error.message;
+    return;
+  }
+
+  // La creaciÃ³n de cuenta no da acceso directo: la persona debe iniciar sesiÃ³n.
+  await supabaseClient.auth.signOut({ scope: 'local' });
+  signupForm.reset();
+  signupMessage.textContent = 'Â¡Cuenta creada! Ahora inicia sesiÃ³n con tu correo y contraseÃ±a.';
+  window.setTimeout(() => {
+    window.location.hash = 'iniciar-sesion';
+    window.location.reload();
+  }, 900);
+});
+
+loginForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const email = document.querySelector('#login-email').value.trim();
+  const password = document.querySelector('#password').value;
+  loginMessage.textContent = 'Comprobando tu cuentaâ€¦';
+
+  const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+  if (error) {
+    loginMessage.textContent = 'No pudimos iniciar sesiÃ³n. Revisa que el correo y la contraseÃ±a sean los mismos que usaste al crear tu cuenta.';
+    return;
+  }
+
+  loginForm.reset();
+  loginMessage.textContent = 'Â¡Bienvenido/a!';
+  showLibrary();
+});
+
+logout.addEventListener('click', async () => {
+  await supabaseClient.auth.signOut();
+  library.hidden = true;
+  document.querySelector('#registro').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+document.querySelectorAll('.download').forEach((button) => {
+  button.addEventListener('click', () => {
+    if (button.classList.contains('resource-toggle')) return;
+    downloadMessage.textContent = 'Tu descarga se abrirÃ¡ en una nueva pestaÃ±a.';
+  });
+});
+
+document.querySelectorAll('.resource-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const section = document.querySelector(`#${button.dataset.target}`);
+    const isOpen = !section.hidden;
+    section.hidden = isOpen;
+    button.setAttribute('aria-expanded', String(!isOpen));
+    button.innerHTML = isOpen
+      ? 'Ver todos <span aria-hidden="true">â†“</span>'
+      : 'Ocultar <span aria-hidden="true">â†‘</span>';
+
+    if (!isOpen) {
+      if (requiredSections.includes(button.dataset.target)) {
+        completedSections.add(button.dataset.target);
+        updateDiploma();
+      }
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+</script>
     <script>document.addEventListener('DOMContentLoaded',()=>{const about=document.querySelector('.about-lumina'),box=document.querySelector('.mission-video');if(!about||!box)return;const row=document.createElement('div');row.style.cssText='display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin-top:28px';about.parentNode.insertBefore(row,about);about.style.cssText+=';flex:1 1 430px;margin-top:0';box.style.cssText='flex:0 1 300px;width:300px;max-width:100%;margin:0;padding:0';const video=box.querySelector('video');video.style.cssText='display:block;width:100%;border-radius:16px;box-shadow:0 10px 24px rgba(6,54,111,.18)';row.append(about,box)})</script>
     <script>document.addEventListener('DOMContentLoaded',()=>{const about=document.querySelector('.about-lumina'),video=document.querySelector('.mission-video video');if(!about||!video)return;const row=about.parentElement;row.style.cssText+=';justify-content:center;max-width:980px;margin:28px auto 0;gap:16px';about.style.cssText+=';flex:1 1 560px';const box=document.querySelector('.mission-video');box.style.cssText+=';flex:0 0 260px;width:260px;height:260px;max-width:100%;overflow:hidden;border-radius:16px';video.style.cssText+=';height:260px;object-fit:cover' })</script>
     <script>document.addEventListener('DOMContentLoaded',()=>{const slot=document.querySelector('#informate-video'),box=document.querySelector('.mission-video');if(!slot||!box)return;slot.append(box);box.style.cssText='width:100%;margin:0;padding:0';const video=box.querySelector('video');video.style.cssText='display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:18px;box-shadow:0 12px 30px rgba(6,54,111,.18)'})</script>
